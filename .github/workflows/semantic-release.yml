@@ -3,7 +3,7 @@ name: Semantic Release for Apps
 on:
   push:
     branches:
-      - mater
+      - master
 
 permissions: write-all
 
