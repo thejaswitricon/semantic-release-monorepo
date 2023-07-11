@@ -3,68 +3,62 @@ name: Semantic Release for Apps
 on:
   push:
     branches:
-      - master
-    # paths:
-    #   - 'modules/**'
+      - mater
+
 permissions: write-all
 
 jobs:
   release:
     name: Semantic Release
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        directory: [ecs-forgate-simple, eks-modules, ecs-modules]  # Replace with your directory names
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        id: checkout
         with:
           fetch-depth: 0
 
-      # Get the folder path of changed file
-      - name: Get changed directories
-        id: changed_dirs
-        run: |
-          CHANGED_DIRS=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | awk -F/ 'BEGIN{OFS=FS} NF--')
-          if [[ -z $CHANGED_DIRS ]]; then
-            echo "::set-output name=dirs::"
-          else
-            echo "::set-output name=dirs::$CHANGED_DIRS"
-          fi
-
-      # Update the tag format to include the name of the directory
       - name: Update tag format
         id: update_tag_format
         run: |
-          APP_DIRS="${{ steps.changed_dirs.outputs.dirs }}"
-          if [[ -z $APP_DIRS ]]; then
-            echo "::set-output name=tag_format::v\${version}"
-          else
-            APP_NAME=$(echo "$APP_DIRS" | awk '{print tolower($0)}')
-            echo "::set-output name=tag_format::${APP_NAME}-v\${version}"
-          fi
+          DIRECTORY=${{ matrix.directory }}
+          echo "::set-output name=tag_format::${DIRECTORY}-v\${version}"
 
-      # Determine the path to the CHANGELOG.md file
       - name: Determine CHANGELOG.md path
         id: changelog_path
         run: |
-          APP_DIRS="${{ steps.changed_dirs.outputs.dirs }}"
-          if [[ -z $APP_DIRS ]]; then
-            echo "::set-output name=path::./CHANGELOG.md"
+          DIRECTORY=${{ matrix.directory }}
+          if [[ -f "${DIRECTORY}/CHANGELOG.md" ]]; then
+            echo "::set-output name=path::${DIRECTORY}/CHANGELOG.md"
           else
-            while IFS= read -r dir; do
-              if [[ -f "${dir}/CHANGELOG.md" ]]; then
-                echo "::set-output name=path::${dir}/CHANGELOG.md"
-              fi
-            done <<< "$APP_DIRS"
+            echo "::set-output name=path::"
           fi
 
-      # Run semantic release using .releaserc.js
       - name: Semantic Release
         uses: docker://ghcr.io/codfish/semantic-release-action:v2
         id: semantic
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_GITHUB2 }}
         with:
-          args: "-e .releaserc.js"
+          tag_format: '${{ steps.update_tag_format.outputs.tag_format }}'
+          additional_packages: |
+            ['@semantic-release/changelog', '@semantic-release/git']
+          plugins: |
+            [
+              '@semantic-release/commit-analyzer',
+              '@semantic-release/release-notes-generator',
+              ['@semantic-release/changelog', { changelogTitle: '# CHANGELOG', "changelogFile": "${{ steps.changelog_path.outputs.path }}" }],
+              '@semantic-release/github',
+              ['@semantic-release/git', { "assets": ["${{ steps.changelog_path.outputs.path }}"] }]
+            ]
+          branches: |
+            [
+              'master'
+            ]
         if: steps.changelog_path.outputs.path != ''
 
       - name: Semantic Release Output Summary
