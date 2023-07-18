@@ -147,6 +147,17 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.PAT_GITHUB2 }}
 
+      - name: Get changed directories
+        id: changed_dirs
+        run: |
+          CHANGED_DIRS=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | awk -F/ 'BEGIN{OFS=FS} NF--')
+          if [[ -z $CHANGED_DIRS ]]; then
+            echo "No changes found in root directory. Skipping workflow."
+            exit 0
+          else
+            echo "Changes found in subdirectories. Proceeding with the workflow."
+          fi
+
       - name: Fetch GitHub Releases
         id: fetch_releases
         run: |
