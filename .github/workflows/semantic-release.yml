@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        directory: [ecs-forgate-simple, eks-modules, ecs-modules]  # Replace with your directory names
+        directory: [modules/aws/ecs-forgateecs-forgate-simple, eks-modules, ecs-modules]  # Replace with your directory names
 
     steps:
       - name: Checkout
