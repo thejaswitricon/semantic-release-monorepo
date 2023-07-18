@@ -1,5 +1,13 @@
 # CHANGELOG
 
+# [1.1.0](https://github.com/thejaswitricon/semantic-release-monorepo/compare/v1.0.0...v1.1.0) (2023-07-18)
+
+
+### Features
+
+* **root:** update ([ed081b2](https://github.com/thejaswitricon/semantic-release-monorepo/commit/ed081b251f46e52f95e06c559369f1b8185f8bb0))
+* **root:** update ([6484572](https://github.com/thejaswitricon/semantic-release-monorepo/commit/64845722e9acb3b9b95b2122e37db3a5c45e87f9))
+
 # 1.0.0 (2023-07-18)
 
 
