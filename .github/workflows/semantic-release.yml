@@ -147,12 +147,16 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.PAT_GITHUB2 }}
 
-      - name: Fetch GitHub Releases
-        id: fetch_releases
+      - name: Fetch Latest Release
+        id: fetch_latest_release
         run: |
-          releases=$(curl -s "https://api.github.com/repos/thejaswitricon/semantic-release-monorepo/releases/latest" | jq -r '.[] | "\n" + (.body // "") + "\n"')
-          echo "$releases" > CHANGELOG.md
+          latest_release=$(curl -s "https://api.github.com/repos/thejaswitricon/semantic-release-monorepo/releases/latest")
+          release_name=$(echo "$latest_release" | jq -r '.name')
+          release_body=$(echo "$latest_release" | jq -r '.body // ""')
+          echo "- $release_name" > CHANGELOG.md
+          echo "$release_body" >> CHANGELOG.md
           cat CHANGELOG.md
+        
 
       - name: Commit and Push Changes
         run: |
