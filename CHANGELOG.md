@@ -1,3 +1,24 @@
+# CHANGELOG
+
+# [1.3.0](https://github.com/thejaswitricon/semantic-release-monorepo/compare/v1.2.0...v1.3.0) (2023-07-19)
+
+
+### Bug Fixes
+
+* **eks-cluster:** update ([882ea11](https://github.com/thejaswitricon/semantic-release-monorepo/commit/882ea11fba18a985b063a972fbf561f00ec31f34))
+* **eks-cluster:** update ([749e112](https://github.com/thejaswitricon/semantic-release-monorepo/commit/749e1127110f75ed7a80cd597272ca9381e70ec4))
+* **eks-cluster:** update ([0a72bd8](https://github.com/thejaswitricon/semantic-release-monorepo/commit/0a72bd85ca78d851b18c0e285dbe0cadc5033c48))
+* **eks-cluster:** update ([01746bf](https://github.com/thejaswitricon/semantic-release-monorepo/commit/01746bf567d3bbde3002f77fc1a79a85a038ebf7))
+* **eks-cluster:** update ([5e7df65](https://github.com/thejaswitricon/semantic-release-monorepo/commit/5e7df650400dd31b003b9ee2cb17557fd480cb24))
+
+
+### Features
+
+* **ecs-simple:** update ([5a0ffbb](https://github.com/thejaswitricon/semantic-release-monorepo/commit/5a0ffbbaeb3c216a3753259bf6c8662041405241))
+* **ecs-simple:** update ([f225c57](https://github.com/thejaswitricon/semantic-release-monorepo/commit/f225c579894c9a56e9d96ae0ebd7805c1253d010))
+* **ecs-simple:** update ([ee3e578](https://github.com/thejaswitricon/semantic-release-monorepo/commit/ee3e578494069a93973b21abbf11944d81fb9528))
+* **eks-cluster:** update ([3113ef0](https://github.com/thejaswitricon/semantic-release-monorepo/commit/3113ef064b8ece0fea86e882190d5e8255125c38))
+* **eks-cluster:** update ([c676de9](https://github.com/thejaswitricon/semantic-release-monorepo/commit/c676de9ba577d869ca6fba9394fec09f60268299))
 
 ## [1.2.3](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/eks/eks-cluster-v1.2.2...aws/eks/eks-cluster-v1.2.3) (2023-07-19)
 
@@ -239,4 +260,3 @@
 ### Bug Fixes
 
 * **eks-cluster:** update ([749e112](https://github.com/thejaswitricon/semantic-release-monorepo/commit/749e1127110f75ed7a80cd597272ca9381e70ec4))
-
