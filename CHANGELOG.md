@@ -1,3 +1,22 @@
+- aws/ecs/ecs-simple-v1.1.0
+# [1.1.0](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/ecs/ecs-simple-v1.0.0...aws/ecs/ecs-simple-v1.1.0) (2023-07-19)
+
+
+### Features
+
+* **ecs-simple:** update ([ee3e578](https://github.com/thejaswitricon/semantic-release-monorepo/commit/ee3e578494069a93973b21abbf11944d81fb9528))
+* **ecs-simple:** update ([0e58381](https://github.com/thejaswitricon/semantic-release-monorepo/commit/0e5838195a934d02e23a2c78d0e8b5f70837d925))
+* **eks-cluster:** update ([c676de9](https://github.com/thejaswitricon/semantic-release-monorepo/commit/c676de9ba577d869ca6fba9394fec09f60268299))
+* **root:** update ([3607803](https://github.com/thejaswitricon/semantic-release-monorepo/commit/36078031cf9127cee7de0064dc400dbf05e6b808))
+* **root:** update ([7060dbf](https://github.com/thejaswitricon/semantic-release-monorepo/commit/7060dbf40bbbc270c75f388d445f87faf9a273dc))
+* **root:** update ([ed081b2](https://github.com/thejaswitricon/semantic-release-monorepo/commit/ed081b251f46e52f95e06c559369f1b8185f8bb0))
+* **root:** update ([6484572](https://github.com/thejaswitricon/semantic-release-monorepo/commit/64845722e9acb3b9b95b2122e37db3a5c45e87f9))
+* **root:** update ([832efc4](https://github.com/thejaswitricon/semantic-release-monorepo/commit/832efc457c65de56f99098126d22e81c84527274))
+
+
+
+
+
 - v1.2.0
 # [1.2.0](https://github.com/thejaswitricon/semantic-release-monorepo/compare/v1.1.0...v1.2.0) (2023-07-18)
 
