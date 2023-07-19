@@ -308,3 +308,10 @@
 * **root:** initial ([7c29958](https://github.com/thejaswitricon/semantic-release-monorepo/commit/7c2995836faacd2e9fd5b835c8e118a076fdb405))
 * **root:** initial ([a2a4d7c](https://github.com/thejaswitricon/semantic-release-monorepo/commit/a2a4d7c2038623daf83c1f78d42d27d1d19a1829))
 * **root:** initial ([09d92af](https://github.com/thejaswitricon/semantic-release-monorepo/commit/09d92af35a3bdc611746d62c60f231976f8fc86e))
+## [1.2.7](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/eks/eks-cluster-v1.2.6...aws/eks/eks-cluster-v1.2.7) (2023-07-19)
+
+
+### Bug Fixes
+
+* **eks-cluster:** update ([1c7a304](https://github.com/thejaswitricon/semantic-release-monorepo/commit/1c7a3042dd8f6ab3967f6d46526a812be2ae84b9))
+
