@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.3.1](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/ecs/ecs-simple-v1.3.0...aws/ecs/ecs-simple-v1.3.1) (2023-07-19)
+
+
+### Bug Fixes
+
+* **ecs-simple:** update ([2f431e0](https://github.com/thejaswitricon/semantic-release-monorepo/commit/2f431e06a32f128ffc531802979c7b8e47334b5f))
+
 # [1.3.0](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/ecs/ecs-simple-v1.2.0...aws/ecs/ecs-simple-v1.3.0) (2023-07-19)
 
 
