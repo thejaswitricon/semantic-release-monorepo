@@ -151,7 +151,6 @@ jobs:
         id: fetch_latest_release
         run: |
           latest_release=$(curl -s "https://api.github.com/repos/thejaswitricon/semantic-release-monorepo/releases/latest")
-          release_name=$(echo "$latest_release" | jq -r '.name')
           release_body=$(echo "$latest_release" | jq -r '.body // ""')
       
           echo "- $release_name" >> CHANGELOG.md
