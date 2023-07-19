@@ -1,5 +1,14 @@
 # CHANGELOG
 
+# [1.1.0](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/eks/eks-cluster-v1.0.0...aws/eks/eks-cluster-v1.1.0) (2023-07-19)
+
+
+### Features
+
+* **ecs-simple:** update ([5a0ffbb](https://github.com/thejaswitricon/semantic-release-monorepo/commit/5a0ffbbaeb3c216a3753259bf6c8662041405241))
+* **ecs-simple:** update ([f225c57](https://github.com/thejaswitricon/semantic-release-monorepo/commit/f225c579894c9a56e9d96ae0ebd7805c1253d010))
+* **ecs-simple:** update ([ee3e578](https://github.com/thejaswitricon/semantic-release-monorepo/commit/ee3e578494069a93973b21abbf11944d81fb9528))
+
 # 1.0.0 (2023-07-18)
 
 
