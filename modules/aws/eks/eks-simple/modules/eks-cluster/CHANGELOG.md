@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [1.2.6](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/eks/eks-cluster-v1.2.5...aws/eks/eks-cluster-v1.2.6) (2023-07-19)
+
+
+### Bug Fixes
+
+* **eks-cluster:** update ([f7da2bf](https://github.com/thejaswitricon/semantic-release-monorepo/commit/f7da2bf0c1c0fd19179478dceaa07c18d6f4faae))
+* **root:** update ([812934e](https://github.com/thejaswitricon/semantic-release-monorepo/commit/812934ec75e984667ce7980a96aafb76b7fe91a3))
+* **root:** update ([fbada26](https://github.com/thejaswitricon/semantic-release-monorepo/commit/fbada26817fa4aad111c6cfacc945ba981a5a284))
+
 ## [1.2.5](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/eks/eks-cluster-v1.2.4...aws/eks/eks-cluster-v1.2.5) (2023-07-19)
 
 
