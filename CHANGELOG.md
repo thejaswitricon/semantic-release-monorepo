@@ -1,7 +1,7 @@
-- aws/eks/eks-cluster-v1.2.0
-# [1.2.0](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/eks/eks-cluster-v1.1.0...aws/eks/eks-cluster-v1.2.0) (2023-07-19)
+- aws/eks/eks-cluster-v1.2.1
+## [1.2.1](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/eks/eks-cluster-v1.2.0...aws/eks/eks-cluster-v1.2.1) (2023-07-19)
 
 
-### Features
+### Bug Fixes
 
-* **eks-cluster:** update ([3113ef0](https://github.com/thejaswitricon/semantic-release-monorepo/commit/3113ef064b8ece0fea86e882190d5e8255125c38))
+* **eks-cluster:** update ([5e7df65](https://github.com/thejaswitricon/semantic-release-monorepo/commit/5e7df650400dd31b003b9ee2cb17557fd480cb24))
