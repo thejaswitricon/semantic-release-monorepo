@@ -315,3 +315,25 @@
 
 * **eks-cluster:** update ([1c7a304](https://github.com/thejaswitricon/semantic-release-monorepo/commit/1c7a3042dd8f6ab3967f6d46526a812be2ae84b9))
 
+# [1.3.0](https://github.com/thejaswitricon/semantic-release-monorepo/compare/aws/ecs/ecs-simple-v1.2.0...aws/ecs/ecs-simple-v1.3.0) (2023-07-19)
+
+
+### Bug Fixes
+
+* **ecs-simple:** update ([5680481](https://github.com/thejaswitricon/semantic-release-monorepo/commit/5680481db15a1af0139c50a64ec1054bbe7fbfe0))
+* **eks-cluster:** update ([1c7a304](https://github.com/thejaswitricon/semantic-release-monorepo/commit/1c7a3042dd8f6ab3967f6d46526a812be2ae84b9))
+* **eks-cluster:** update ([f7da2bf](https://github.com/thejaswitricon/semantic-release-monorepo/commit/f7da2bf0c1c0fd19179478dceaa07c18d6f4faae))
+* **eks-cluster:** update ([b140d7e](https://github.com/thejaswitricon/semantic-release-monorepo/commit/b140d7ebafc07711cefc5ef2bb8fbcbd86e231c6))
+* **eks-cluster:** update ([882ea11](https://github.com/thejaswitricon/semantic-release-monorepo/commit/882ea11fba18a985b063a972fbf561f00ec31f34))
+* **eks-cluster:** update ([749e112](https://github.com/thejaswitricon/semantic-release-monorepo/commit/749e1127110f75ed7a80cd597272ca9381e70ec4))
+* **eks-cluster:** update ([0a72bd8](https://github.com/thejaswitricon/semantic-release-monorepo/commit/0a72bd85ca78d851b18c0e285dbe0cadc5033c48))
+* **eks-cluster:** update ([01746bf](https://github.com/thejaswitricon/semantic-release-monorepo/commit/01746bf567d3bbde3002f77fc1a79a85a038ebf7))
+* **eks-cluster:** update ([5e7df65](https://github.com/thejaswitricon/semantic-release-monorepo/commit/5e7df650400dd31b003b9ee2cb17557fd480cb24))
+* **root:** update ([812934e](https://github.com/thejaswitricon/semantic-release-monorepo/commit/812934ec75e984667ce7980a96aafb76b7fe91a3))
+* **root:** update ([fbada26](https://github.com/thejaswitricon/semantic-release-monorepo/commit/fbada26817fa4aad111c6cfacc945ba981a5a284))
+
+
+### Features
+
+* **eks-cluster:** update ([3113ef0](https://github.com/thejaswitricon/semantic-release-monorepo/commit/3113ef064b8ece0fea86e882190d5e8255125c38))
+
